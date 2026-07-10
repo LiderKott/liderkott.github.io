@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family:'Inter',system-ui,sans-serif;
+    box-sizing:border-box;
+}
+body{
+    background:url('assets/images/index.svg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    color:white;
+    height:100vh;
+    overflow:hidden;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+nav{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+}
+nav-col{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+}
+#hero{
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding:20px 40px;
+    flex-wrap:wrap;
+    height:100vh;
+}
+#hero nav-col .logo{
+    border-radius:16px;
+    border:2px solid red;
+    padding:5px;
+    transition:0.1s ease;
+    height:240px;
+    cursor:pointer;
+}
+#hero nav-col .logo:hover{
+    transform:translate(-5px,-5px);
+    filter:brightness(1.2);
+    box-shadow:5px 5px 0 rgba(255,0,0,0.5);
+}
+#hero nav-col .logo:active{
+    transform:translate(0,0);
+    filter:brightness(0.7);
+    box-shadow:none;
+}
+#hero nav-col .a{
+    background:linear-gradient(to right,white,rgba(255,100,100));
+    background-clip:text;
+    color:transparent;
+}
+#hero nav-col .b{
+    transition:0.1s ease;
+    cursor:pointer;
+    color:gray;
+}
+#hero nav-col .b:hover{
+    color:red;
+    font-weight:900;
+    text-decoration:underline;
+}
+#credits{
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding:20px 40px;
+    flex-wrap:wrap;
+    height:100vh;
+}
+#credits h2 span a{
+    color:gray;
+    transition:0.1s ease;
+    cursor:pointer;
+}
+#credits h2 span a:hover{
+    color:red;
+    font-weight:900;
+    text-decoration:underline;
+}
+#liderkot{
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+    gap:20px;
+    padding:20px 40px;
+    flex-wrap:wrap;
+    height:100vh;
+}
+#liderkot .twitch{
+    border:3px solid indigo;
+    padding:5px;
+    border-radius:2px;
+    width:144px;
+    transition:0.1s ease;
+}
+#liderkot .twitch:hover{
+    transform:translate(-5px,-5px);
+    filter:brightness(1.2);
+    box-shadow:5px 5px 0 rgba(75,0,130,0.5);
+}
+#liderkot .twitch:active{
+    transform:translate(0,0);
+    filter:brightness(0.7);
+    box-shadow:none;
+}
+#liderkot .tiktok{
+    border:3px solid fuchsia;
+    padding:5px;
+    border-radius:2px;
+    width:144px;
+    transition:0.1s ease;
+}
+#liderkot .tiktok:hover{
+    transform:translate(-5px,-5px);
+    filter:brightness(1.2);
+    box-shadow:5px 5px 0 rgba(255,0,255,0.5);
+}
+#liderkot .tiktok:active{
+    transform:translate(0,0);
+    filter:brightness(0.7);
+    box-shadow:none;
+}
+#liderkot .discord{
+    border:3px solid blue;
+    padding:5px;
+    border-radius:2px;
+    width:144px;
+    transition:0.1s ease;
+}
+#liderkot .discord:hover{
+    transform:translate(-5px,-5px);
+    filter:brightness(1.2);
+    box-shadow:5px 5px 0 rgba(0,0,255,0.5);
+}
+#liderkot .discord:active{
+    transform:translate(0,0);
+    filter:brightness(0.7);
+    box-shadow:none;
+}
+.back{
+    position:absolute;
+    top:20px;
+    left:20px;
+    color:white;
+    width:32px;
+    height:32px;
+    cursor:pointer;
+    transition:0.1s ease;
+}
+.back:hover{
+    filter:drop-shadow(0 0 5px white);
+}
