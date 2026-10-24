@@ -170,3 +170,15 @@ nav-col{
 .back:hover{
     filter:drop-shadow(0 0 5px white);
 }
+#hero .github{
+    width:64px;
+    height:auto;
+    filter:invert(100%);
+    transition:0.1s ease;
+}
+#hero .github:hover{
+    filter:invert(50%);
+}
+#hero .github:active{
+    filter:invert(25%);
+}
